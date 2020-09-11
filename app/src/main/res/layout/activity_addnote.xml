@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8BE1D8"
     tools:context=".addnote">
 
     <EditText
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_above="@id/editText2"
         android:hint="Title of the note"
         android:layout_centerHorizontal="true"
         android:inputType="textPersonName"
@@ -18,8 +20,9 @@
 
     <EditText
         android:id="@+id/editText2"
+        android:layout_margin="30dp"
         android:hint="Note Description"
-        android:layout_below="@id/editText"
+        android:layout_above="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,19 +31,21 @@
         android:text="" />
 
     <TextView
-        android:layout_below="@id/editText2"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView"
         android:textSize="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:layout_centerVertical="true"
         android:text="Priority:" />
 
     <NumberPicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/np"
+        android:layout_margin="10dp"
+        android:solidColor="#FFA7C5"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textView"
 
